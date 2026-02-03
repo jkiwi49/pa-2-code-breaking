@@ -9,16 +9,11 @@ execute:
 ---
 
 
-**NAMES: Ronit Kumar and Kiwi Cervantes** 
+**NAMES:** Ronit Kumar and Kiwi Cervantes
 ```{r}
 #| label: Setup
 #| echo: False #Hiding code.
 # We are going to load tidyverse in this setup chunk.
-library(tidyverse)
-
-```
-```{r}
-#| label: setup
 library(tidyverse)
 
 ```
@@ -96,7 +91,10 @@ If you want to look at `my_symbols` click on it under the Environment Tab in the
 ```{r}
 #| label: add-label-1
 my_symbols<- c(lower_case, upper_case, punctuation)
-
+my_dataframe <- data.frame(my_symbols) # Making dataframe from my_symbol.
+colnames(my_dataframe)[1] <- "symbol" #Changing column name.
+count(my_dataframe) #Total number of symbols in our dataframe.
+singular_df <- mutate(my_dataframe,symbol_id = as.numeric(factor(my_symbols))) # Adds symbol id to each symbol
 
 ```
 
