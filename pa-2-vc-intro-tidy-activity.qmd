@@ -9,13 +9,17 @@ execute:
 ---
 
 
-**NAMES:** Ronit & Kiwi  
+**NAMES: Ronit Kumar and Kiwi Cervantes** 
+```{r}
+#| label: Setup
+#| echo: False #Hiding code.
+# We are going to load tidyverse in this setup chunk.
+library(tidyverse)
 
-
+```
 ```{r}
 #| label: setup
 library(tidyverse)
-
 
 ```
 
