@@ -131,11 +131,6 @@ step2<-step1*18
 step3<-step2-257 #mult and sub
 step4<-exp(step3) #exp
 step5<-step4^2 #square
-#add comment here
-#there are several ways to do this, the way below doesn't overwrite any column so you "don't lose work"
-
-
-
 ```
 
 **Checkpoint:** Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17. Write the code to verify that this is true for your `top_secret` object!
@@ -144,9 +139,7 @@ step5<-step4^2 #square
 
 ```{r}
 #| label: add-label-3
-#add comment here
 sum(step5<17)
-
 
 ```
 
@@ -159,8 +152,7 @@ Next, carry out the following steps:
 
 ```{r}
 #| label: add-label-4
-
-#add comment here
+ vector_1 <- matrix(data = step5 , ncol = 5)
 
   
 ```
@@ -169,7 +161,6 @@ Next, carry out the following steps:
 
 ```{r}
 #| label: add-label-5
-#add comment here
 evens <- seq(from = 2, to = 382, by = 2)
 ```
 
@@ -180,7 +171,9 @@ evens <- seq(from = 2, to = 382, by = 2)
 
 ```{r}
 #| label: add-label-6
-#add comment here
+vector_1[,1] - evens
+vector_1[ 18-24 , 3] -100
+vector_1[, 4-5] * 2
 
 ```
 
