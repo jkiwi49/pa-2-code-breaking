@@ -18,7 +18,8 @@ library(tidyverse)
 
 ```
 ```{r}
-#| label: add-label-0
+#| label: setup
+library(tidyverse)
 
 ```
 
@@ -94,7 +95,7 @@ If you want to look at `my_symbols` click on it under the Environment Tab in the
 
 ```{r}
 #| label: add-label-1
-# add comment here
+my_symbols<- c(lower_case, upper_case, punctuation)
 
 
 ```
