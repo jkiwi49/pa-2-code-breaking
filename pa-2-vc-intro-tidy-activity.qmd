@@ -126,6 +126,11 @@ By altering this top secret set of numbers, you will be able to create a message
 
 ```{r}
 #| label: add-label-2
+step1<-top_secret+14 #add
+step2<-step1*18
+step3<-step2-257 #mult and sub
+step4<-exp(step3) #exp
+step5<-step4^2 #square
 #add comment here
 #there are several ways to do this, the way below doesn't overwrite any column so you "don't lose work"
 
@@ -140,7 +145,7 @@ By altering this top secret set of numbers, you will be able to create a message
 ```{r}
 #| label: add-label-3
 #add comment here
-
+sum(step5<17)
 
 
 ```
@@ -154,6 +159,7 @@ Next, carry out the following steps:
 
 ```{r}
 #| label: add-label-4
+
 #add comment here
 
   
