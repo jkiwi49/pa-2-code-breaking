@@ -9,7 +9,7 @@ execute:
 ---
 
 
-**NAMES: Ronit Kumar and Kiwi Cervantes** 
+**NAMES:** Ronit Kumar and Kiwi Cervantes
 ```{r}
 #| label: Setup
 #| echo: False #Hiding code.
